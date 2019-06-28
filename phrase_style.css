@@ -1,0 +1,105 @@
+* { margin: 0px; padding: 0px; }
+body {
+	font-size: 120%;
+	background: #9900cc;
+}
+label{ 
+	
+}
+.header {
+	width: 60%;
+	margin: 20px auto 0px;
+	color: black;
+	background: #ffff00;
+	text-align: left;
+	border: 1px solid #B0C4DE;
+	border-bottom: none;
+	border-radius: 0px 0px 0px 0px;
+	padding: 20px;
+}
+form, .content {
+	width: 60%;
+	margin: 0px auto;
+	padding: 20px;
+	border: 1px solid #B0C4DE;
+	background: white;
+	border-radius: 0px 0px 0px 0px;
+	overflow-x: auto;
+
+	
+}
+.input-group {
+	margin: 10px 0px 10px 0px;
+	width: 73%;
+	box-sizing:border-box;
+	height:auto;
+	word-wrap: break-word;
+	
+}
+.input-group label {
+	display: block;
+	text-align: left;
+	margin: 3px;
+	height:auto;
+	word-wrap: break-word;
+	box-sizing:border-box;
+	
+	
+}
+.input-group input {
+	height: 30px;
+	width: 93%;
+	padding: 5px 10px;
+	font-size: 16px;
+	
+	border: 1px solid gray;
+	height:auto;
+	word-wrap: break-word;
+	box-sizing:border-box;
+	
+}
+select{
+		font-size:16px;
+}
+option{
+		font-size:16px;
+}
+button {
+	padding: 10px;
+	font-size: 25px;
+	color: black;
+	background: #ffff00;
+	border: none;
+	border-radius: 5px;
+}
+
+table{
+  color: black; 
+  margin-top:auto; 
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  width: 85%;
+  height: 95%;
+}
+td{
+  padding: 5px; 
+  text-align: left;
+  border-style: solid;
+
+}
+form:nth-of-type(3) table .solutionCell{
+	background: yellow;
+}
+h1{
+	text-align:left;
+	padding-bottom: 20px;
+}
+textarea{
+	margin: 0px; 
+	width: 65%; 
+	height: 65px;
+	font-size:110%;
+	overflow-x: auto;
+}	

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Catch-A-Phrase</title>
+	<link rel="stylesheet" type="text/css" href="phrase_style.css">	
+	<script src="phrase_Scripts.js"></script>
+	</head>
+<body>
+	<div class="header">
+		<h2>Catch-A-Phrase</h2>
+	</div>
+	<form>
+		<div class="input-group">
+			<h3>Phrase</h3>
+			<textarea id="puzzlephrase" name="puzzlephrase">W,A,L,K,TH,E,T,A,LK</textarea>
+		</div>
+		<div class="input-group">
+			<h3>Fillers</h3>
+			<textarea id="puzzlewords" name="puzzlefill">a, b, c, d, e, f, g, j, I, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z, ab, bc, cd, AB, BC, CD</textarea>
+		</div>
+		<div class="input-group">
+			<label name="height">Grid Height</label>
+			<select>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+			</select>
+		</div>
+		<div class="input-group">
+			<label name="width">Grid Width</label>
+			<select>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+			</select>
+		</div>
+		<div class="input-group">
+			<button type="submit" class="btn" name="generate_btn">Generate</button>
+			<button type="submit" class="php_button" name="generate_php">Generate PHP</button>
+		</div>
+	</form>
+	<form>
+		<H1>Catch-A-Phrase Puzzle</H1>	
+		<table>
+			
+				<tr>
+					<td>a</td>
+					<td>x</td>
+					<td>BC</td>
+					<td>U</td>
+					<td>Z</td>
+					<td>p</td>
+					<td>r</td>
+					<td>e</td>
+					<td>l</td>
+					<td>s</td>
+				</tr>
+			
+				<tr>
+					<td>F</td>
+					<td>cd</td>
+					<td>y</td>
+					<td>N</td>
+					<td>g</td>
+					<td>y</td>
+					<td>TH</td>
+					<td>M</td>
+					<td>N</td>
+					<td>BC</td>
+				</tr>
+			
+				<tr>
+						<td>o</td>
+						<td>l</td>
+						<td>y</td>
+						<td>A</td>
+						<td>m</td>
+						<td>K</td>
+						<td>u</td>
+						<td>E</td>
+						<td>P</td>
+						<td>R</td>
+				</tr>
+			
+				<tr>
+						<td>x</td>
+						<td>E</td>
+						<td>W</td>
+						<td>D</td>
+						<td>L</td>
+						<td>D</td>
+						<td>AB</td>
+						<td>T</td>
+						<td>O</td>
+						<td>D</td>
+				</tr>
+			
+				<tr>
+						<td>cd</td>
+						<td>f</td>
+						<td>f</td>
+						<td>A</td>
+						<td>d</td>
+						<td>D</td>
+						<td>A</td>
+						<td>P</td>
+						<td>Z</td>
+						<td>F</td>
+				</tr>
+			
+				<tr>
+						<td>f</td>
+						<td>X</td>
+						<td>c</td>
+						<td>S</td>
+						<td>a</td>
+						<td>LK</td>
+						<td>r</td>
+						<td>A</td>
+						<td>Z</td>
+						<td>X</td>
+				</tr>
+			
+				<tr>
+						<td>X</td>
+						<td>a</td>
+						<td>h</td>
+						<td>F</td>
+						<td>B</td>
+						<td>u</td>
+						<td>O</td>
+						<td>p</td>
+						<td>l</td>
+						<td>a</td>
+				</tr>
+			
+				<tr>
+						<td>a</td>
+						<td>m</td>
+						<td>B</td>
+						<td>x</td>
+						<td>y</td>
+						<td>G</td>
+						<td>i</td>
+						<td>b</td>
+						<td>Y</td>
+						<td>m</td>
+				</tr>
+			
+				<tr>
+						<td>m</td>
+						<td>B</td>
+						<td>ab</td>
+						<td>a</td>
+						<td>b</td>
+						<td>c</td>
+						<td>d</td>
+						<td>e</td>
+						<td>P</td>
+						<td>l</td>
+				</tr>
+			
+				<tr>
+                        <td>k</td>
+						<td>B</td>
+						<td>e</td>
+						<td>r</td>
+						<td>t</td>
+						<td>h</td>
+						<td>g</td>
+						<td>f</td>
+						<td>F</td>
+						<td>O</td>
+				</tr>
+			</table>
+	</form>
+	<form>
+		<H1>SOLUTION</H1>	
+		<table>
+				
+				<tr>
+					<td>a</td>
+					<td>x</td>
+					<td>BC</td>
+					<td>U</td>
+					<td>Z</td>
+					<td>p</td>
+					<td>r</td>
+					<td>e</td>
+					<td>l</td>
+					<td>s</td>
+				</tr>
+			
+				<tr>
+					<td>F</td>
+					<td>cd</td>
+					<td>y</td>
+					<td>N</td>
+					<td>g</td>
+					<td>y</td>
+					<td class="solutionCell">TH</td>
+					<td>M</td>
+					<td>N</td>
+					<td>BC</td>
+				</tr>
+			
+				<tr>
+						<td>o</td>
+						<td>l</td>
+						<td>y</td>
+						<td>A</td>
+						<td>m</td>
+						<td class="solutionCell">K</td>
+						<td>u</td>
+						<td class="solutionCell">E</td>
+						<td>P</td>
+						<td>R</td>
+				</tr>
+			
+				<tr>
+						<td>x</td>
+						<td>E</td>
+						<td class="solutionCell">W</td>
+						<td>D</td>
+						<td class="solutionCell">L</td>
+						<td>D</td>
+						<td>AB</td>
+						<td class="solutionCell">T</td>
+						<td>O</td>
+						<td>D</td>
+				</tr>
+			
+				<tr>
+						<td>cd</td>
+						<td>f</td>
+						<td>f</td>
+						<td class="solutionCell">A</td>
+						<td>d</td>
+						<td>D</td>
+						<td class="solutionCell">A</td>
+						<td>P</td>
+						<td>Z</td>
+						<td>F</td>
+				</tr>
+			
+				<tr>
+						<td>f</td>
+						<td>X</td>
+						<td>c</td>
+						<td>S</td>
+						<td>a</td>
+						<td class="solutionCell">LK</td>
+						<td>r</td>
+						<td>A</td>
+						<td>Z</td>
+						<td>X</td>
+				</tr>
+			
+				<tr>
+						<td>X</td>
+						<td>a</td>
+						<td>h</td>
+						<td>F</td>
+						<td>B</td>
+						<td>u</td>
+						<td>O</td>
+						<td>p</td>
+						<td>l</td>
+						<td>a</td>
+				</tr>
+			
+				<tr>
+						<td>a</td>
+						<td>m</td>
+						<td>B</td>
+						<td>x</td>
+						<td>y</td>
+						<td>G</td>
+						<td>i</td>
+						<td>b</td>
+						<td>Y</td>
+						<td>m</td>
+				</tr>
+			
+				<tr>
+						<td>m</td>
+						<td>B</td>
+						<td>ab</td>
+						<td>a</td>
+						<td>b</td>
+						<td>c</td>
+						<td>d</td>
+						<td>e</td>
+						<td>P</td>
+						<td>l</td>
+				</tr>
+			
+				<tr>
+                        <td>k</td>
+						<td>B</td>
+						<td>e</td>
+						<td>r</td>
+						<td>t</td>
+						<td>h</td>
+						<td>g</td>
+						<td>f</td>
+						<td>F</td>
+						<td>O</td>
+				</tr>
+			</table>
+	</form>
+</body>
+</html>
